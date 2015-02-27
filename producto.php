@@ -23,5 +23,4 @@ while($fila = mysqli_fetch_array($resultado)) {
 } 
 mysqli_close($conexion);
 ?>
-
 <?php include "php/piedepagina.inc" ?>
