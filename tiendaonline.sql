@@ -184,3 +184,6 @@ INSERT INTO `productos` (`id`, `nombre`, `descripcion`, `precio`, `peso`, `longi
 (3, 'Lámpara Estrella', 'Descripción de la lámpara estrella', '18.00', 1, 20, 20, 20, 13, 1);
 
 
+select * from clientes;
+
+
