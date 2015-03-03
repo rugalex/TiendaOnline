@@ -14,8 +14,8 @@ header{margin-bottom:15px;}
 
 article img{box-shadow:0px 10px 15px rgba(0,0,0,0.4);}
 article{clear:both;text-align: center;}
-footer{text-align:center;color:#BFBFBF}
+footer{text-align:center;color:#BFBFBF;padding-bottom: 0%;position: relative;}
 #bg_y{background-color: #CE5100;}
 #bg_r{background-color: #F7981A;}
 #bg_m{background-color: #FFD574;}
-
+#bg_w{background-color: #F2E9BB;}

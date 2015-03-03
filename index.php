@@ -14,7 +14,7 @@ while($fila = mysqli_fetch_array($resultado)) {
 	
 	
     echo '<div class="col-lg-4 col-sm-6 col-md-4">';
-    echo '<div class="thumbnail">';
+    echo '<div class="thumbnail" id="bg_w">';
 	echo "<article>";
 	echo "<br>";
 	$peticion2 = "SELECT * FROM imagenesproductos WHERE idproducto = ".$fila['id']." LIMIT 1";
