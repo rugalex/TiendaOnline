@@ -14,10 +14,22 @@ if(!isset($_SESSION['contador'])){$_SESSION['contador'] = 0;}
 		<script type="text/javascript" src="/GitHub/TiendaOnline/js/codigo.js"></script>
 	</head>
 	<body id="bg_y">
+
 	<div class="row" >
 <div class="col-md-2 col-lg-3 col-sm-1" ></div>
 		<div id="bg_r" class="col-md-8 col-lg-6 col-sm-10"  >
+
 			<header>
+
+	<form class="navbar-form navbar-right" role="submit">
+  <div class="form-group form-group-sm">
+    <input id="inputEmail" class="form-control" placeholder="e-mail" required="" autofocus="" type="email" aria-describedby="sizing-addon3">
+    <input id="inputPassword" class="form-control" placeholder="contraseña" required="" type="password" aria-describedby="sizing-addon3">
+  </div>
+  <button class="btn btn-sm btn-primary" type="submit">Iniciar sesión</button>
+  </form>
+ 
+	
 				<a href="/GitHub/TiendaOnline/index.php"><h1>Rissoto</h1></a>
 				<h2>Comidas tipicas y algo más!</h2>
 			</header>
