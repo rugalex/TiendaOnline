@@ -1,12 +1,13 @@
 <?php include "php/cabecera.inc" ?>
 <html>
 	<head>
-		<title>Tienda</title>
-		<link rel=Stylesheet href="../css/movil.css" media='screen and (min-width: 1px) and (max-width: 800px)'>
-		<link rel=Stylesheet href="../css/pcmac.css" media='screen and (min-width: 801px) and (max-width: 4000px)'>
+		<title>Rissoto</title>
+	    <link rel=Stylesheet href="/GitHub/TiendaOnline/css/estilos.css" >
+	    <link href="/GitHub/TiendaOnline/css/bootstrap.min.css" rel="stylesheet" media="screen">
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-		<script type="text/javascript" src="../js/jquery.js"></script>
-		<script type="text/javascript" src="../js/codigo.js"></script>
+		<script type="text/javascript" src="/GitHub/TiendaOnline/js/jquery.js"></script>
+		<script type="text/javascript" src="/GitHub/TiendaOnline/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="/GitHub/TiendaOnline/js/codigo.js"></script>
 	</head>
 <body>
 <br>¿Ya eres usuario?<br>

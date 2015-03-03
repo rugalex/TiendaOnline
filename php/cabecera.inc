@@ -5,8 +5,8 @@ if(!isset($_SESSION['contador'])){$_SESSION['contador'] = 0;}
 <!doctype html>
 <html lang="es">
 	<head>
-		<title>Tienda</title>
-	    <link rel=Stylesheet href="/GitHub/TiendaOnline/css/pcmac.css" >
+		<title>Rissoto</title>
+	    <link rel=Stylesheet href="/GitHub/TiendaOnline/css/estilos.css" >
 	    <link href="/GitHub/TiendaOnline/css/bootstrap.min.css" rel="stylesheet" media="screen">
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 		<script type="text/javascript" src="/GitHub/TiendaOnline/js/jquery.js"></script>
