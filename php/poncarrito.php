@@ -18,11 +18,11 @@ for($i = 0;$i< $_SESSION['contador'];$i++){
 	$peticion = "SELECT * FROM productos WHERE id=".$_SESSION['producto'][$i]."";
 	$resultado = mysqli_query($conexion, $peticion);
 	while($fila = mysqli_fetch_array($resultado)) {
-		echo "<tr><td>".$fila['nombre']."</td><td> ".$fila['precio']."</td></tr>";
+		echo "<tr><td>".$fila['nombre']."</td><td> ".$fila['precio']."$"."</td></tr>";
 	$suma += $fila['precio'];
 	}
 }
-echo "<tr><td>Subtotal</td><td>".number_format($suma,2)."</td></tr>";
+echo "<tr><td><b>Subtotal</b></td><td><b>".number_format($suma,2)."$"."</b></td></tr>";
 echo "</table>";
 mysqli_close($conexion);
 
