@@ -8,7 +8,7 @@
 	$resultado=mysqli_query($enlace,$consulta) or die (mysqli_error());
 	 if(mysqli_num_rows($resultado)){
 		echo '<center><br><br><label style="color: red;">El usuario ya esta registrado</label><br></center>';
-		echo '<center><a  href="../clientenuevo.php">Volver</a></center>';				 		
+		echo '<center><a  href="clientenuevo.php">Volver</a></center>';				 		
 	}else{		
 		$peticion="insert into clientes values (null,'".$_POST['nombre']."','".$_POST['apellido'].
 		"','".$_POST['mail']."','".$_POST['user']."','".$_POST['pass']."',NULL,NULL,NULL,NULL,NULL,NULL,NULL)";
