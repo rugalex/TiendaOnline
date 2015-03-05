@@ -24,7 +24,7 @@ if(!isset($_SESSION['contador'])){$_SESSION['contador'] = 0;}
 	
  
 	
-				<a href="../index.php"><h1>Rissoto</h1></a>
+				<a href="/GitHub/TiendaOnline/index.php"><h1>Rissoto</h1></a>
 				<h2>Comidas tipicas y algo más!</h2>
 			</header>
 			<section>
