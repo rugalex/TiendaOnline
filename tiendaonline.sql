@@ -19,10 +19,8 @@ CREATE TABLE `clientes` (
   `contrasena` varchar(255) DEFAULT NULL,
   `telefono` int(12) DEFAULT NULL,
   `movil` int(12) DEFAULT NULL,
-  `direccioncalle` varchar(255) DEFAULT NULL,
-  `codigopostal` varchar(255) DEFAULT NULL,
-  `ciudad` varchar(255) DEFAULT NULL,
-  `pais` varchar(255) DEFAULT NULL,
+  `direccioncalle` varchar(255) DEFAULT NULL,  
+  `ciudad` varchar(255) DEFAULT NULL,  
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8;
 
@@ -30,8 +28,8 @@ CREATE TABLE `clientes` (
 -- Volcado de datos para la tabla `clientes`
 --
 
-INSERT INTO `clientes` VALUES (1,'Gabriel','Rodriguez','gabriel-rugal@hotmail.com','gabarodr','12345',NULL,NULL,NULL,NULL,NULL,NULL),
-(2,'Valeria','Tapia','vtapia@hotmail.com','Valeria','12345',NULL,NULL,NULL,NULL,NULL,NULL);
+INSERT INTO `clientes` VALUES (1,'Gabriel','Rodriguez','gabriel-rugal@hotmail.com','gabarodr','12345',NULL,NULL,NULL,NULL),
+(2,'Valeria','Tapia','vtapia@hotmail.com','Valeria','12345',NULL,NULL,NULL,NULL);
 -- --------------------------------------------------------
 
 --
@@ -151,6 +149,7 @@ CREATE TABLE `productos` (
   `descripcion` varchar(255) DEFAULT NULL,
   `precio` decimal(30,2) DEFAULT NULL,
   `existencias` int(255) DEFAULT NULL,
+  `tipo` varchar(30) DEFAULT NULL,
   `activado` tinyint(1) DEFAULT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=utf8;
@@ -159,36 +158,36 @@ CREATE TABLE `productos` (
 -- Volcado de datos para la tabla `productos`
 --
 
-INSERT INTO `productos` VALUES (1,'Arroz con menestra','lenteja, carne',6.59,7,1),
-(2,'Yapingacho','Esta es la descripción de la lámpara cubo',5.59,7,1),
-(3,'Encebollado','Albacora',4.49,7,1),
-(4,'Fritada','Chifles y mote',7.49,7,1),
-(5,'Seco de chivo','Carne de chivo',6.99,13,1),
-(6,'Ceviche de camarón','Camarón',5.99,7,1),
-(7,'Fanesca','Huevo,pescado bacalao y granos variados.',5.99,7,1),
-(8,'Pollo horneado','arroz, ensalada, pollo',6.00,7,1),
-(9,'Cazuela','Pescado, cangrejo, camarón',6.99,7,1),
-(10,'Arroz marinero','arroz, cangrejo,camarón,ostras,calamar',8.99,7,1),
-(11,'Colada morada','frutos, mortiños, canela',3.00,7,1),
-(12,'Colada de avena','avena',1.50,7,1),
-(13,'Canelazo','canela, aguardiente',2.00,7,1),
-(14,'Resbaladera','arroz, canela, cebada',1.50,7,1),
-(15,'Daiquiri','ron blanco, zumo de limón',4.50,7,1),
-(16,'Cerveza','cebada',1.50,7,1),
-(17,'Limonada','limón',1.50,7,1),
-(18,'Cuba libre','ron, cola negra, limón',4.00,7,1),
-(19,'Morocho','maíz morocho,leche, canela',2.50,7,1),
-(20,'Rompope','ron, canela, leche, huevo',4.50,7,1),
-(21,'Torta de chocolate','chocolate',3.50,7,1),
-(22,'Torte tres leches','leche entera,leche evaporada, leche condensada ',2.99,7,1),
-(23,'Torta de limón','limón, ralladura de limón',2.50,7,1),
-(24,'Flan casero','huevo, leche, esencia vainilla',2.00,7,1),
-(25,'Mousse de chocolate','chocolate, crema de leche',3.50,7,1),
-(26,'Tarta de frutas','frutos varios, crema pastelera',3.00,7,1),
-(27,'Budín de chocolate','chocolate',2.50,7,1),
-(28,'Panacotta con frutos rojos','nata, esencia vainilla,frutos rojos',3.75,7,1),
-(29,'Torta de ron','ron, nueces',3.00,7,1),
-(30,'Espumilla de guayaba','guayaba',2.00,7,1);
+INSERT INTO `productos` VALUES (1,'Arroz con menestra','lenteja, carne',6.59,7,'plato_fuerte',1),
+(2,'Yapingacho','Esta es la descripción de la lámpara cubo',5.59,7,'plato_fuerte',1),
+(3,'Encebollado','Albacora',4.49,7,'plato_fuerte',1),
+(4,'Fritada','Chifles y mote',7.49,7,'plato_fuerte',1),
+(5,'Seco de chivo','Carne de chivo',6.99,13,'plato_fuerte',1),
+(6,'Ceviche de camarón','Camarón',5.99,7,'plato_fuerte',1),
+(7,'Fanesca','Huevo,pescado bacalao y granos variados.',5.99,7,'plato_fuerte',1),
+(8,'Pollo horneado','arroz, ensalada, pollo',6.00,7,'plato_fuerte',1),
+(9,'Cazuela','Pescado, cangrejo, camarón',6.99,7,'plato_fuerte',1),
+(10,'Arroz marinero','arroz, cangrejo,camarón,ostras,calamar',8.99,7,'plato_fuerte',1),
+(11,'Colada morada','frutos, mortiños, canela',3.00,7,'bebida',1),
+(12,'Colada de avena','avena',1.50,7,'bebida',1),
+(13,'Canelazo','canela, aguardiente',2.00,7,'bebida',1),
+(14,'Resbaladera','arroz, canela, cebada',1.50,7,'bebida',1),
+(15,'Daiquiri','ron blanco, zumo de limón',4.50,7,'bebida',1),
+(16,'Cerveza','cebada',1.50,7,'bebida',1),
+(17,'Limonada','limón',1.50,7,'bebida',1),
+(18,'Cuba libre','ron, cola negra, limón',4.00,7,'bebida',1),
+(19,'Morocho','maíz morocho,leche, canela',2.50,7,'bebida',1),
+(20,'Rompope','ron, canela, leche, huevo',4.50,7,'bebida',1),
+(21,'Torta de chocolate','chocolate',3.50,7,'postre',1),
+(22,'Torte tres leches','leche entera,leche evaporada, leche condensada ',2.99,7,'postre',1),
+(23,'Torta de limón','limón, ralladura de limón',2.50,7,'postre',1),
+(24,'Flan casero','huevo, leche, esencia vainilla',2.00,7,'postre',1),
+(25,'Mousse de chocolate','chocolate, crema de leche',3.50,7,'postre',1),
+(26,'Tarta de frutas','frutos varios, crema pastelera',3.00,7,'postre',1),
+(27,'Budín de chocolate','chocolate',2.50,7,'postre',1),
+(28,'Panacotta con frutos rojos','nata, esencia vainilla,frutos rojos',3.75,7,'postre',1),
+(29,'Torta de ron','ron, nueces',3.00,7,'postre',1),
+(30,'Espumilla de guayaba','guayaba',2.00,7,'postre',1);
 
 select * from clientes;
 select * from productos;
