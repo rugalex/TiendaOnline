@@ -10,17 +10,20 @@
 		<script type="text/javascript" src="/GitHub/TiendaOnline/js/codigo.js"></script>
 	</head>
 <body>
-<br>¿Ya eres usuario?<br>
-<form action="php/logcliente.php" method="POST">
-
-	<input type="text" name="usuario" autocomplete="off" placeholder="Introduce tu nombre de usuario">
-	<input type="password" name="contrasena" autocomplete="off"  placeholder="Introduce tu contraseña">
-	<input type="submit">
-
-</form>
-¿Eres nuevo usuario?
+<form class="navbar-form navbar-right" action="/GitHub/TiendaOnline/php/logcliente.php" method="POST">
+	¿Ya eres usuario?<br>
+  <div class="form-group form-group-sm">
+    <input name="usuario" id="input" class="form-control" placeholder="usuario" required="" autofocus="" type="text" aria-describedby="sizing-addon3">
+    <input name="contrasena" id="inputPassword" class="form-control" placeholder="contraseña" required="" type="password" aria-describedby="sizing-addon3">
+  </div>
+  <button class="btn btn-sm btn-primary" type="submit">Iniciar sesión</button><br>
+    ¿Eres nuevo usuario?
 <a href="php/clientenuevo.php"><font size="2px"> Click aquí para crear una cuenta</font></a> 
-<br>
+  </form>
+
+</br>
+<h4>Por favor inicia sesión primero!</h4>
+</br>
 </body>
 </html>
 <?php include "php/piedepagina.inc" ?>

@@ -159,7 +159,7 @@ CREATE TABLE `productos` (
 --
 
 INSERT INTO `productos` VALUES (1,'Arroz con menestra','lenteja, carne',6.59,7,'plato_fuerte',1),
-(2,'Yapingacho','Esta es la descripción de la lámpara cubo',5.59,7,'plato_fuerte',1),
+(2,'Yapingacho','Huevo y chorizo, Cuencano.',5.59,7,'plato_fuerte',1),
 (3,'Encebollado','Albacora',4.49,7,'plato_fuerte',1),
 (4,'Fritada','Chifles y mote',7.49,7,'plato_fuerte',1),
 (5,'Seco de chivo','Carne de chivo',6.99,13,'plato_fuerte',1),

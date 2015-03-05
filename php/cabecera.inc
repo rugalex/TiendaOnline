@@ -6,12 +6,12 @@ if(!isset($_SESSION['contador'])){$_SESSION['contador'] = 0;}
 <html lang="es">
 	<head>
 		<title>Rissoto</title>
-	    <link rel=Stylesheet href="../css/estilos.css" >
-	    <link href="../css/bootstrap.min.css" rel="stylesheet" media="screen">
+	    <link rel=Stylesheet href="/GitHub/TiendaOnline/css/estilos.css" >
+	    <link href="/GitHub/TiendaOnline/css/bootstrap.min.css" rel="stylesheet" media="screen">
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-		<script type="text/javascript" src="../js/jquery.js"></script>
-		<script type="text/javascript" src="../js/bootstrap.min.js"></script>
-		<script type="text/javascript" src="../js/codigo.js"></script>
+		<script type="text/javascript" src="/GitHub/TiendaOnline/js/jquery.js"></script>
+		<script type="text/javascript" src="/GitHub/TiendaOnline/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="/GitHub/TiendaOnline/js/codigo.js"></script>
 	</head>
 	<body id="bg_y">
 
@@ -21,13 +21,7 @@ if(!isset($_SESSION['contador'])){$_SESSION['contador'] = 0;}
 
 			<header>
 
-	<form class="navbar-form navbar-right" role="submit">
-  <div class="form-group form-group-sm">
-    <input id="inputEmail" class="form-control" placeholder="e-mail" required="" autofocus="" type="email" aria-describedby="sizing-addon3">
-    <input id="inputPassword" class="form-control" placeholder="contraseña" required="" type="password" aria-describedby="sizing-addon3">
-  </div>
-  <button class="btn btn-sm btn-primary" type="submit">Iniciar sesión</button>
-  </form>
+	
  
 	
 				<a href="../index.php"><h1>Rissoto</h1></a>
@@ -40,8 +34,8 @@ if(!isset($_SESSION['contador'])){$_SESSION['contador'] = 0;}
 			Carrito
 			</div>
 		
- <a href='php/destruir.php'> <button type="button" class="btn btn-danger">Vaciar carrito <span class="glyphicon glyphicon-trash" aria-hidden="true"><span></button></a>
- <a href='confirmar.php'> <button type="button" class="btn btn-success">Confirmar compra <span class="glyphicon glyphicon-ok" aria-hidden="true"><span></button></a>
+ <a href='/GitHub/TiendaOnline/php/destruir.php'> <button type="button" class="btn btn-danger">Vaciar carrito <span class="glyphicon glyphicon-trash" aria-hidden="true"><span></button></a>
+ <a href='/GitHub/TiendaOnline/confirmar.php'> <button type="button" class="btn btn-success">Confirmar compra <span class="glyphicon glyphicon-ok" aria-hidden="true"><span></button></a>
 </br>
 </html>
 			

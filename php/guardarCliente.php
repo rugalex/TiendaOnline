@@ -1,5 +1,6 @@
+<?php include "cabecera.inc" ?>
+<?php include "config.inc" ?>
 <?php
-    include "config.inc";	
 		$conexion=mysqli_connect($servidor,$usuario,$contrasena,$basededatos);
 		if(isset($_POST['enviar'])){
 	include "config.inc";	
@@ -17,5 +18,5 @@
 		echo '<center><a  href="../confirmar.php">Volver</a></center>';		
 		mysqli_close($conexion);
 	}
-}						  
+}		include "piedepagina.inc" 				  
 ?>

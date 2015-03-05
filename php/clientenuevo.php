@@ -105,29 +105,29 @@ if(!filter_var($tel,FILTER_VALIDATE_INT)){
 ?>
 <html>
 
-<<<<<<< HEAD
+
 	<head>
 		<title>Tienda</title>
-		<link rel=Stylesheet href="../css/movil.css" media='screen and (min-width: 1px) and (max-width: 800px)'>
-		<link rel=Stylesheet href="../css/pcmac.css" media='screen and (min-width: 801px) and (max-width: 4000px)'>
+		<link rel=Stylesheet href="/GitHub/TiendaOnline/css/movil.css" media='screen and (min-width: 1px) and (max-width: 800px)'>
+		<link rel=Stylesheet href="/GitHub/TiendaOnline/css/estilos.css" media='screen and (min-width: 801px) and (max-width: 4000px)'>
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-		<script type="text/javascript" src="../js/jquery.js"></script>
-		<script type="text/javascript" src="../js/codigo.js"></script>								
+		<script type="text/javascript" src="/GitHub/TiendaOnline/js/jquery.js"></script>
+		<script type="text/javascript" src="/GitHub/TiendaOnline/js/codigo.js"></script>								
 	</head>
 <body>
 
-<form action="guardarCliente.php" method="post" id="datos" class="navbar-form navbar-right" role="submit">
+<form action="guardarCliente.php" method="post" id="datos" class="navbar-form navbar-left" role="submit">
 <br>
  <div class="form-group form-group-sm">
-<input class="form-control" type="text" name="nombre" placeholder="Nombres" required="" autocomplete="off" /><br/>
-<input class="form-control" type="text" name="apellido" placeholder="Apellidos" required="" autocomplete="off" /><br/>
-<input id="inputEmail" class="form-control" placeholder="e-mail" required="" autofocus="" autocomplete="off" type="email" name="mail" aria-describedby="sizing-addon3"><br/>
-<input id="inputPassword" class="form-control" placeholder="contraseña" required="" type="password" name="pass" aria-describedby="sizing-addon3"><br/>
-<input class="form-control" type="text" name="user" placeholder="Usuario" required="" id="user" autocomplete="off" /> <br/>
-<input class="form-control" type="text" name="tel" placeholder="Telefono" required="" autocomplete="off" /><?php echo '<span class="tel"></span>'; ?><br/>
-<input class="form-control" type="text" name="movil" placeholder="Movil" required="" autocomplete="off" /><br/>
-<input class="form-control" type="text" name="direc" placeholder="Direccion" required="" autocomplete="off" /><br/>
-<input class="form-control" type="text" name="ciu" placeholder="Ciudad" required="" autocomplete="off" /><br/>
+<input class="form-control" type="text" pattern="[A-Za-z]{5,25}" name="nombre" placeholder="Nombres" required autocomplete="off" /><br/>
+<input class="form-control" type="text" pattern="[A-Za-z]{5,25}" name="apellido" placeholder="Apellidos" required autocomplete="off" /><br/>
+<input id="inputEmail" class="form-control" pattern="[A-Za-z0-9._%-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,4}" placeholder="e-mail" required autofocus="" autocomplete="off" type="email" name="mail" aria-describedby="sizing-addon3"><br/>
+<input id="inputPassword" class="form-control" placeholder="contraseña" required type="password" name="pass" aria-describedby="sizing-addon3"><br/>
+<input class="form-control" type="text" name="user" pattern="[A-Za-z0-9]{5,15}" placeholder="Usuario" required id="user"  autocomplete="off" /> <br/>
+<input class="form-control" type="tel"  name="tel"  pattern="[0-9]{6,7}" placeholder="Telefono" required autocomplete="off" /><?php echo '<span class="tel"></span>'; ?><br/>
+<input class="form-control" type="tel"  name="movil"  pattern="[0-9]{10}" placeholder="Movil" required autocomplete="off" /><br/>
+<input class="form-control" type="text" name="direc" placeholder="Direccion" required autocomplete="off" /><br/>
+<input class="form-control" type="text" name="ciu" pattern="[A-Za-z]{5,25}" placeholder="Ciudad" required autocomplete="off" /><br/>
 
 <input class="btn btn-sm btn-primary" type="submit" name="enviar" value="enviar"/>
 <input class="btn btn-default btn-sm btn-right" type="reset" value="Cancelar"/>
@@ -137,5 +137,5 @@ if(!filter_var($tel,FILTER_VALIDATE_INT)){
 </html>
 
 
->>>>>>> e70bc8053e1ffb1d99a63e8f33b874d8ba18129e
+
 <?php include "piedepagina.inc" ?>
