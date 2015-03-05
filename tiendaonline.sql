@@ -18,7 +18,7 @@ CREATE TABLE `clientes` (
   `usuario` varchar(255) DEFAULT NULL,
   `contrasena` varchar(255) DEFAULT NULL,
   `telefono` int(12) DEFAULT NULL,
-  `movil` int(12) DEFAULT NULL,
+  `movil` varchar(12) DEFAULT NULL,
   `direccioncalle` varchar(255) DEFAULT NULL,  
   `ciudad` varchar(255) DEFAULT NULL,  
   PRIMARY KEY (`id`)

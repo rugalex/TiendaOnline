@@ -11,7 +11,7 @@
 		echo '<center><a  href="clientenuevo.php">Volver</a></center>';				 		
 	}else{		
 		$peticion="insert into clientes values (null,'".$_POST['nombre']."','".$_POST['apellido'].
-		"','".$_POST['mail']."','".$_POST['user']."','".$_POST['pass']."',NULL,NULL,NULL,NULL,NULL,NULL,NULL)";
+		"','".$_POST['mail']."','".$_POST['user']."','".$_POST['pass']."','".$_POST['tel']."','".$_POST['movil']."','".$_POST['direc']."','".$_POST['ciu']."')";
 		$resultado2=mysqli_query($conexion,$peticion);
 		echo "<html><br><br><center><font size=5><b>Usuario creado con exito</b></font><center></html>";
 		echo '<center><a  href="../confirmar.php">Volver</a></center>';		
