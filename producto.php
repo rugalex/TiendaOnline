@@ -6,9 +6,10 @@ $conexion = mysqli_connect($servidor,$usuario,$contrasena,$basededatos);
 mysqli_set_charset($conexion, "utf8");
 $peticion = "SELECT * FROM productos WHERE id=".$_GET['id']." LIMIT 1";
 $resultado = mysqli_query($conexion, $peticion);
-while($fila = mysqli_fetch_array($resultado)) {
-	echo '<div class="row">';
+echo '<div class="row">';
 	echo "<article>";
+while($fila = mysqli_fetch_array($resultado)) {
+	
 	echo "<a href='producto.php?id=".$fila['id']."'><h3>".$fila['nombre']."</h3></a>";
 	echo "<p>".$fila['descripcion']."</p>";
 	echo "<p>Precio: ".$fila['precio']." $</p>";
@@ -20,9 +21,10 @@ while($fila = mysqli_fetch_array($resultado)) {
 	echo "<br>";
 	echo "<a href='producto.php?id=".$fila['id']."'><button>Más información</button></a>";
 	echo "<button>Comprar ahora</button>";
-	echo "</article>";
-	echo "</div>";
+	
 } 
+echo "</article>";
+	echo "</div>";
 mysqli_close($conexion);
 ?>
 <?php include "php/piedepagina.inc" ?>

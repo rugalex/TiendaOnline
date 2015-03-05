@@ -6,12 +6,12 @@ if(!isset($_SESSION['contador'])){$_SESSION['contador'] = 0;}
 <html lang="es">
 	<head>
 		<title>Rissoto</title>
-	    <link rel=Stylesheet href="TiendaOnline/css/estilos.css" >
-	    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+	    <link rel=Stylesheet href="/GitHub/TiendaOnline/css/estilos.css" >
+	    <link href="/GitHub/TiendaOnline/css/bootstrap.min.css" rel="stylesheet" media="screen">
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-		<script type="text/javascript" src="js/jquery.js"></script>
-		<script type="text/javascript" src="js/bootstrap.min.js"></script>
-		<script type="text/javascript" src="js/codigo.js"></script>
+		<script type="text/javascript" src="/GitHub/TiendaOnline/js/jquery.js"></script>
+		<script type="text/javascript" src="/GitHub/TiendaOnline/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="/GitHub/TiendaOnline/js/codigo.js"></script>
 	</head>
 	<body id="bg_y">
 

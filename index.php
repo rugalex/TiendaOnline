@@ -17,6 +17,7 @@ while($fila = mysqli_fetch_array($resultado)) {
     echo '<div class="thumbnail" id="bg_w">';
 	echo "<article>";
 	echo "<br>";
+
 	$peticion2 = "SELECT * FROM imagenesproductos WHERE idproducto = ".$fila['id']." LIMIT 1";
 	$resultado2 = mysqli_query($conexion, $peticion2);
 	while($fila2 = mysqli_fetch_array($resultado2)) {
@@ -28,13 +29,19 @@ while($fila = mysqli_fetch_array($resultado)) {
 	echo "<p><b>Precio: ".$fila['precio']." $</b></p>";
 	
 	echo "<br>";
+
 	echo "<a href='producto.php?id=".$fila['id']."'>Más información</a></br>";
 	echo "<button value='".$fila['id']."' class='botoncompra btn btn-primary' type='button'>Comprar ahora</button>";
+
 	echo "</article>";
+
 	echo "</div>";
 	echo "</div>";
+
 	
 } 
+echo "<br>";
+	echo "<br>";
 echo "</div>";
 mysqli_close($conexion);
 ?>
