@@ -5,6 +5,7 @@ include "cabecera.inc";
 
 ?>
 <html>
+<<<<<<< HEAD
 	<head>
 		<title>Tienda</title>
 		<link rel=Stylesheet href="../css/movil.css" media='screen and (min-width: 1px) and (max-width: 800px)'>
@@ -35,4 +36,30 @@ include "cabecera.inc";
 <br/>
 </body>
 </html>
+=======
+	
+<form action="/GitHub/TiendaOnline/guardarCliente.php" method="post" id="datos" class="navbar-form" role="submit">
+  <div class="form-group form-group-sm">
+  
+<input class="form-control" type="text" name="nombre" placeholder="Nombres" autocomplete="off" /><br/>
+<input class="form-control" type="text" name="apellido" placeholder="Apellidos" autocomplete="off" /><br/>
+<input class="form-control" type="text" name="mail" placeholder="E-mail" autocomplete="off" /> <br/>
+<input class="form-control" type="text" name="user" placeholder="Usuario" id="user" autocomplete="off" /> <br/>
+<input class="form-control" type="password" name="pass" placeholder="Contraseña" autocomplete="off" /> <br/>
+<input class="form-control" type="text" name="tel" placeholder="Telefono" autocomplete="off" /><br/>
+<input class="form-control" type="text" name="movil" placeholder="Movil" autocomplete="off" /><br/>
+<input class="form-control" type="text" name="direc" placeholder="Direccion" autocomplete="off" /><br/>
+<input class="form-control" type="text" name="ciu" placeholder="Ciudad" autocomplete="off" /><br/>
+<input class="form-control" type="text" name="pais" placeholder="Pais" autocomplete="off" /><br/>
+
+<input type="button" class="btn btn-default btn-sm" name="enviar" type="submit" value="Enviar"/>
+<input class="btn btn-default btn-sm btn-right" type="reset" value="Cancelar"/>
+  </div>
+ 
+  </form>
+
+
+
+
+>>>>>>> e70bc8053e1ffb1d99a63e8f33b874d8ba18129e
 <?php include "piedepagina.inc" ?>

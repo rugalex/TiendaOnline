@@ -1,0 +1,21 @@
+
+
+
+h1,h2,h3,p{margin:0px;padding:0px;}
+h1{font-size:48px;}
+h2{font-size:14px;font-weight:normal;color:#C0392B;}
+header a{text-decoration:none;color:#96281B;}
+#contienecarrito table tr td{text-align:right;padding:4px;}
+#contienecarrito table{width:100%;border-spacing:0;border-collapse:collapse;}
+#contienecarrito table tr:last-child{background-color:#EEEEEE;}
+article a{color:black;text-decoration:none;}
+header{margin-bottom:15px;}
+
+
+article img{box-shadow:0px 10px 15px rgba(0,0,0,0.4);}
+article{clear:both;text-align: center;}
+footer{text-align:center;color:#BFBFBF;padding-bottom: 0%;position: relative;}
+#bg_y{background-color: #CE5100;}
+#bg_r{background-color: #F7981A;}
+#bg_m{background-color: #FFD574;}
+#bg_w{background-color: #F2E9BB;}
