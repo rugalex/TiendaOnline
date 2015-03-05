@@ -40,8 +40,7 @@ while($fila = mysqli_fetch_array($resultado)) {
 
 	
 } 
-echo "<br>";
-	echo "<br>";
+
 echo "</div>";
 mysqli_close($conexion);
 ?>
